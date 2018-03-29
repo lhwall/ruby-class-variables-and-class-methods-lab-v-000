@@ -32,7 +32,7 @@ class Song
   
   def self.artists 
     artists_array = @@artists.each do |artist|
-      if artists_array.includes?(artist) == false 
+      if artists_array.include?(artist) == false 
         artists_array << artist 
       end
     end 
