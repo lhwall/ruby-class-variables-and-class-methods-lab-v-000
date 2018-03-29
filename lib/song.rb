@@ -45,4 +45,7 @@ class Song
     artists_array
   end
   
+  def self.genre_count
+    
+  
 end
