@@ -26,4 +26,12 @@ class Song
     end 
   end
   
+  def artists 
+    artists_array = @@artists.each do |artist|
+      if artists_array.contains?(artist) == false 
+        artists_array << artist 
+      end
+    end 
+  end
+  
 end
