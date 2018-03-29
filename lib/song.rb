@@ -35,13 +35,13 @@ class Song
   end
   
   def self.artists
-    artists_array = @@artists.each do |artist|
+    artists_array = []
+    @@artists.each do |artist|
       if @@artists_array.include?(artist) == false 
         artists_array << artist 
       end
     end 
     artists_array
-    binding.pry
   end
   
 end
