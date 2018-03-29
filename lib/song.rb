@@ -22,7 +22,10 @@ class Song
     @@count
   end 
   
-  def self.genres 
+  def self.genre 
+    @@genres
+  
+  def self.genre_count 
     genres_array = @@genres.each do |genre|
       if @@genres.include?(genre) == false 
         genres_array << genre 
@@ -30,7 +33,7 @@ class Song
     end 
   end
   
-  def self.artists 
+  def self.artist_count 
     artists_array = @@artists.each do |artist|
       if @@artists.include?(artist) == false 
         artists_array << artist 
