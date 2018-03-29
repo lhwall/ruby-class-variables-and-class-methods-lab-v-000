@@ -41,6 +41,9 @@ class Song
       end
     end 
     artists_array
+    binding.pry
   end
   
 end
+
+Song.artists
