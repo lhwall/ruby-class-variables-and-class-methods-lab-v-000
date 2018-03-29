@@ -21,9 +21,7 @@ class Song
   def self.count
     @@count
   end 
-  
-  def self.genre 
-    @@genres
+
   
   def self.genre_count 
     genres_array = @@genres.each do |genre|
@@ -31,6 +29,7 @@ class Song
         genres_array << genre 
       end
     end 
+    genres_array
   end
   
   def self.artists
@@ -39,7 +38,7 @@ class Song
         artists_array << artist 
       end
     end 
-    return artists_array
+    artists_array
   end
   
 end
